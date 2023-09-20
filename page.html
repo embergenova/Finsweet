@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .newsItems{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .newsItem{
+            width: 31%;
+        }
+        .newsItem_img img{
+            width: 100%;
+            height: 300px;
+        }
+        .newsItem_date{
+            font-size: 16px;
+            line-height: 28px;
+            color: #282938;
+            opacity: 0.7;
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+        .newsItem_title{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: #282938;
+            margin-top: 16px;
+        }
+        .newsItem_desc{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #282938;
+            opacity: 0.7;
+            margin-top: 16px;
+        }
+        .newsItem_link {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            color: #282938;
+        }
+        .news_title{
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 64px;
+            color: #282938;
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <section id="news">
+        <div class="container">
+            <h2 class="news_title">Our news</h2>
+            <div class="newsItems" id="newsItems"></div>
+        </div>
+    </section>
+    <script>
+        let news = [];
+        getNews();
+        async function getNews(){
+            await fetch("https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=b1161943d9e14abbbe5774e7fa7b5236")
+            .then((response) => response.json())
+            .then((json) => news = json.articles);
+            let newsItems = ''
+            for (let i =0; i<3; i++){
+                newsItems += `<div class="newsItem">
+                    <div class="newsItem_img">
+                        <img src="${news[i].urlToImage}" alt="">
+                    </div>
+                    <p class="newsItem_date">${news[i].publishedAt}</p>
+                    <h3 class="newsItem_title">${news[i].title}</h3>
+                    <p class="newsItem_desc">${news[i].description}</p>
+                    <a class="newsItem_link" target="_blank" href="${news[i].url}">Read More</a>
+                </div>`
+            }
+            document.getElementById('newsItems').innerHTML = newsItems;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Finsweet</title>
+</head>
+<body>
+    <header>
+        <div class="container navigation">
+            <nav>
+               <div  class="header-logo">
+                <a href="index.html">                
+                    <img src="images/Logo.png" alt="logo">
+                </a>
+               </div>
+                <div class="navv d-none d-md-none d-lg-block">
+                 <a href="index.html">Home</a>
+                 <a href="#">About us</a>
+                 <a href="#">Features</a>
+                 <a href="#">Pricing</a>
+                 <a href="#">FAQ</a>
+                 <a href="blog.html">Blog</a>
+                 <button type="button" class="btnLogin-popup"  data-toggle="modal" data-target="#exampleModal" >Contact us</button>
+                </div>
+            </nav>     
+        </div>
+            <div class="pos-f-t burger">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="logo">
+                            <img src="images/Logo.png" alt="logo">
+                        </div>
+                        <button class="navbar-toggler collapsed navBar_btn" type="button" 
+                        data-toggle="collapse" data-target="#navbarToggleExternalContent" 
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon navBar_btn_icon"></span>
+                        </button>
+                    </div>
+                </nav>
+                <div class="collapse" id="navbarToggleExternalContent">
+    
+                        <div class="p-4">
+                            <div class="container">
+                                <div class="nav_links">
+                                    <a href="#">Home</a>
+                                    <a href="#">About us</a>
+                                    <a href="#">Features</a>
+                                    <a href="#">Pricing</a>
+                                    <a href="#">FAQ</a>
+                                    <a href="#">Blog</a>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <form class="card-body cardbody-color p-lg-5">
+
+                        <div class="text-center">
+                          <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                            width="200px" alt="profile">
+                        </div>
+            
+                        <div class="mb-3">
+                          <input type="text" class="form-control" id="Username" aria-describedby="emailHelp"
+                            placeholder="User Name">
+                        </div>
+                        <div class="mb-3">
+                          <input type="password" class="form-control" id="password" placeholder="password">
+                        </div>
+                        <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100">Login</button></div>
+                        <div id="emailHelp" class="form-text text-center mb-5 text-dark">Not
+                          Registered? <a href="#" class="text-dark fw-bold"> Create an
+                            Account</a>
+                        </div>
+                      </form>
+                </div>
+              </div>
+    </header>
+    <div class="home">
+        <div class="container">
+            <div class="hero">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="hero_text">
+                            <h1>Building stellar websites for early startups</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                           <div class="hero_btn">
+                            <button class="btn">View our work</button>
+                              <a href="#" class="arrow"> View Pricing <img src="images/Arrow 1.png"> </a>
+                           </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-6">
+                        <img class="bg" src="images/bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="heading">
+                        <div class="heading_title">How we work</div>
+                        <div class="heading_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        <div ><a href="#" class="heading_us">Get in touch with us <img src="images/Arrow 2.png"></a></div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="cards">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                            <img src="images/card1.png" width="50px" height="50px" alt=""> 
+                            <div class="card_title"> Strategy</div>
+                            <div class="card_desc"> Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/card2.png" width="50px" height="50px" alt=""> 
+                                <div class="card_title">Wireframing</div>
+                                    <div class="card_desc">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</div>
+                                </div>
+                        </div>
+                        <div class="col-md-6">  
+                            <div class="card">
+                            <img src="images/card3.png" width="50px" height="50px" alt=""> 
+                            <div class="card_title">Design</div>
+                             <div class="card_desc">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">  
+                            <div class="card">
+                            <img src="images/card4.png" width="50px" height="50px" alt=""> 
+                            <div class="card_title">Development</div>
+                            <div class="card_desc">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="third-title">
+                <h2>View our projects</h2>
+                <a href="#">View More <img src="images/Arrow 3.png"></a></a>
+            </div>
+            <div class="third-content">
+                <div id="third-left" onmouseover="hoverEffect(1)" onmouseout="normalEffect(1)">
+                    <div class="desc desc_first" id="item1">
+                        <div class="desc_content">
+                            <h4>Workhub office Webflow Webflow Design</h4>
+                            <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam </p>
+                            <a  href="#">View project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-right">
+                <div id="tr-top" onmouseover="hoverEffect(2)" onmouseout="normalEffect(2)">
+                    <div class="desc" id="item2">
+                        <div class="desc_content">
+                            <h4>Unisaas Website Desing</h4>
+                            <a  href="#">View portfolio</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="tr-bottom" onmouseover="hoverEffect(3)" onmouseout="normalEffect(3)">
+                    <div class="desc" id="item3">
+                        <div class="desc_content">
+                            <h4>Unisaas Website Desing</h4>
+                            <a  href="#">View portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </section>
+    <div class="items">
+        <div class="container">
+            <div class="items_title">
+                  Features
+                <p>Design that solves problems, one product at a time</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="item_icon"><img src="images/item1.png" alt=""></div>
+                        <div class="item_title">Uses Client First </div>
+                        <div class="item_desc">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="item_icon"><img src="images/item2.png" alt=""></div>
+                        <div class="item_title"> Two Free Revision Round</div>
+                        <div class="item_desc">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">                  
+                     <div class="item">
+                    <div class="item_icon"><img src="images/item3.png" alt=""></div>
+                    <div class="item_title">Template Customization</div>
+                    <div class="item_desc">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </div>
+                </div></div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="item_icon"><img src="images/item4.png" alt=""></div>
+                        <div class="item_title">24/7 Support</div>
+                        <div class="item_desc">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="item_icon"><img src="images/item5.png" alt=""></div>
+                        <div class="item_title">Quick Delivery</div>
+                        <div class="item_desc">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">                  
+                    <div class="item">
+                    <div class="item_icon"><img src="images/item6.png" alt=""></div>
+                    <div class="item_title">Hands-on approach</div>
+                    <div class="item_desc">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </div>
+                </div></div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="coment">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonials">
+                        <h4>What our clients say about us</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <h4>"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."</h4>
+                    <div class="content_name">
+                        <div class="profile">
+                            <img src="images/pro.png" alt="">
+                            <div class="pro_name">
+                                <h6>Jenny Wilson</h6>
+                                <p>Vice President</p>
+                           </div> 
+                        </div>
+                        <div class="arrows"> <img src="images/Arrows.png" alt=""></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section>
+        <div class="container faq">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="faq-title">
+                        <h3>Frequently asked questions</h3>
+                        <p>Contact us for more info</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <span class="faq-numb">01</span> How much time does it take?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <span class="faq-numb">02</span> What is your class naming convention?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <span class="faq-numb">03</span> How do you communicate?                             
+                             </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <span class="faq-numb">04</span> I have a bigger project. Can you handle it?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <span class="faq-numb">05</span>What is your class naming convention?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="contact">
+                <div class="contact_convert">
+                    <h2>Building stellar websites for early startups</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+                </div>
+                <div class="contact_form">
+                    <div class="form-box login">
+                        <h2>Send inquiry</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="person-circle-outline"></ion-icon>
+                                </span>
+                                <input type="text" required>
+                                <label>Your Name</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                                <input type="email" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                                <input type="password" required>
+                                <label>Paste your Figma design URL</label>
+                            </div>
+                            <button type="submit" class="form-btn">Send an Inquiry</button>
+                            <div class="login-register">
+                                <a href="#">Get in touch with us <img src="images/Arrow 1.png"></a>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="news">
+        <div class="container">
+            <h2 class="news_title">Our news</h2>
+            <div class="newsItems" id="newsItems"> </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer-logo">
+                    <img src="images/Logo.png" alt="">
+                    <p>We are always open to discuss your project and improve your online presence.</p>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-email">
+                        <h4>Email me at</h4>
+                        <p>contact@website.com</p>
+                    </div>
+                    <div class="contact-numb">
+                        <h4>Call us</h4>
+                        <p>0927 6277 28525</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="footer-content">
+                    <h3>Lets Talk!</h3>
+                    <p>We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
+                </div>
+                <div class="footer-icon">
+                    <a href="#"><img src="images/f.png" alt=""> </a>
+                    <a href="#"><img src="images/t.png" alt=""> </a>
+                    <a href="#"><img src="images/i.png" alt=""> </a>
+                    <a href="#"><img src="images/l.png" alt=""> </a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+            <div class="container">
+                <div class="footer-down">
+                    <div class="down-logo">Copyright 2022, Finsweet.com </div>
+                    <div class="navv d-none d-md-none d-lg-block">
+                        <a href="#">Home</a>
+                        <a href="#">About us</a>
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Blog</a>
+                    </div>
+               </div>
+        </div>
+    </footer>
+    <script>
+        function hoverEffect(item){
+    document.getElementById(`item${item}`).style.visibility = 'visible'
+    document.getElementById(`item${item}`).style.opacity = '1'
+}
+function normalEffect(item){
+    document.getElementById(`item${item}`).style.visibility = 'hidden'
+    document.getElementById(`item${item}`).style.opacity = '0'
+}
+    </script>
+</body>
+</html>
